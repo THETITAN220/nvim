@@ -20,6 +20,6 @@ opt.splitright = true
 
 opt.scrolloff = 8
 opt.signcolumn = "yes"
-
+vim.opt.splitright = true
+vim.opt.splitbelow = true
 opt.clipboard = "unnamedplus"
-
