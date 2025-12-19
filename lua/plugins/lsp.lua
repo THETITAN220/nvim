@@ -60,8 +60,10 @@ return {
                 local map = function(mode, lhs, rhs, desc)
                     vim.keymap.set(mode, lhs, rhs, { buffer = bufnr, silent = true, desc = desc })
                 end
+                
+                -- The specific change for project-wide references with preview
                 map("n", "gd", vim.lsp.buf.definition, "Go to Definition")
-                map("n", "gr", vim.lsp.buf.references, "Go to References")
+                map("n", "gr", [[<cmd>lua require('telescope.builtin').lsp_references()<CR>]], "Go to References")
                 map("n", "K", vim.lsp.buf.hover, "Hover Documentation")
                 map("n", "<leader>rn", vim.lsp.buf.rename, "Rename Symbol")
                 map("n", "<leader>ca", vim.lsp.buf.code_action, "Code Action")

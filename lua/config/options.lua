@@ -23,3 +23,8 @@ opt.signcolumn = "yes"
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 opt.clipboard = "unnamedplus"
+
+vim.opt.numberwidth = 5
+vim.opt.foldcolumn = "1"
+vim.opt.signcolumn = "yes"
+vim.opt.statuscolumn = "%C%=%l %s "

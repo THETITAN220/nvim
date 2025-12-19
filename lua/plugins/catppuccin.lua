@@ -5,7 +5,8 @@ return {
     opts = {
         flavour = "mocha", -- latte | frappe | macchiato | mocha
         transparent_background = false,
-
+        no_italic = true,
+        no_bold = true,
         integrations = {
             lualine = true,
             treesitter = true,
