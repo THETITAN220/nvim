@@ -2,7 +2,6 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 vim.keymap.set("i", "jk", "<Esc>")
-vim.keymap.set("n", "<leader>ee", ":Ex<CR>")
 vim.keymap.set("n", "<leader>l", ":Lazy<CR>")
 vim.keymap.set("n", "<leader>mm", ":Mason<CR>")
 
@@ -17,3 +16,5 @@ vim.keymap.set("n", "<leader>wj", "<C-w>j", { desc = "Move to lower window" })
 vim.keymap.set("n", "<leader>wk", "<C-w>k", { desc = "Move to upper window" })
 vim.keymap.set("n", "<leader>wl", "<C-w>l", { desc = "Move to right window" })
 vim.keymap.set('n', '<leader>bd', ':bp|bd #<CR>', { desc = 'Close Buffer, Keep Window' })
+vim.opt.hlsearch = true
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
