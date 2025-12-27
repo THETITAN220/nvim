@@ -3,8 +3,8 @@ return {
     name = "catppuccin",
     priority = 1000,
     opts = {
-        flavour = "mocha", -- latte | frappe | macchiato | mocha
-        transparent_background = false,
+        flavour = "mocha",
+        transparent_background = true,
         no_italic = true,
         no_bold = true,
         integrations = {
@@ -12,6 +12,9 @@ return {
             treesitter = true,
             mason = true,
             cmp = true,
+            telescope = {
+                enabled = true,
+            },
             native_lsp = {
                 enabled = true,
                 underlines = {
@@ -22,6 +25,20 @@ return {
                 },
             },
         },
+        custom_highlights = function(colors)
+            return {
+                NormalFloat = { bg = "none" },
+                FloatBorder = { bg = "none" },
+                TelescopeNormal = { bg = "none" },
+                TelescopeBorder = { bg = "none" },
+                TelescopePromptNormal = { bg = "none" },
+                TelescopePromptBorder = { bg = "none" },
+                TelescopeResultsNormal = { bg = "none" },
+                TelescopeResultsBorder = { bg = "none" },
+                TelescopePreviewNormal = { bg = "none" },
+                TelescopePreviewBorder = { bg = "none" },
+            }
+        end,
     },
     config = function(_, opts)
         require("catppuccin").setup(opts)

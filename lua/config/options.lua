@@ -28,3 +28,9 @@ vim.opt.numberwidth = 5
 vim.opt.foldcolumn = "1"
 vim.opt.signcolumn = "yes"
 vim.opt.statuscolumn = "%C%=%l %s "
+
+vim.api.nvim_create_autocmd("TextYankPost", {
+    callback = function()
+        vim.highlight.on_yank()
+    end,
+})
