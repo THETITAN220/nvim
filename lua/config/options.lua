@@ -1,5 +1,6 @@
 local opt = vim.opt
 
+vim.opt.shadafile = "NONE"
 opt.number = true
 opt.relativenumber = true
 
