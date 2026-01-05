@@ -30,6 +30,17 @@ vim.opt.foldcolumn = "1"
 vim.opt.signcolumn = "yes"
 vim.opt.statuscolumn = "%C%=%l %s "
 
+vim.opt.fileformats = "unix,dos"
+vim.opt.fileformat = "unix"
+
+-- Actively change the file format to LF endings
+vim.api.nvim_create_autocmd("BufWritePre", {
+    pattern = "*",
+    callback = function()
+        vim.opt.fileformat = "unix"
+    end,
+})
+
 vim.api.nvim_create_autocmd("TextYankPost", {
     callback = function()
         vim.highlight.on_yank()
