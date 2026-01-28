@@ -25,20 +25,20 @@ return {
                 },
             },
         },
-        custom_highlights = function(colors)
-            return {
-                NormalFloat = { bg = "none" },
-                FloatBorder = { bg = "none" },
-                TelescopeNormal = { bg = "none" },
-                TelescopeBorder = { bg = "none" },
-                TelescopePromptNormal = { bg = "none" },
-                TelescopePromptBorder = { bg = "none" },
-                TelescopeResultsNormal = { bg = "none" },
-                TelescopeResultsBorder = { bg = "none" },
-                TelescopePreviewNormal = { bg = "none" },
-                TelescopePreviewBorder = { bg = "none" },
-            }
-        end,
+        -- custom_highlights = function(colors)
+        --     return {
+        --         NormalFloat = { bg = "none" },
+        --         FloatBorder = { bg = "none" },
+        --         TelescopeNormal = { bg = "none" },
+        --         TelescopeBorder = { bg = "none" },
+        --         TelescopePromptNormal = { bg = "none" },
+        --         TelescopePromptBorder = { bg = "none" },
+        --         TelescopeResultsNormal = { bg = "none" },
+        --         TelescopeResultsBorder = { bg = "none" },
+        --         TelescopePreviewNormal = { bg = "none" },
+        --         TelescopePreviewBorder = { bg = "none" },
+        --     }
+        -- end,
     },
     config = function(_, opts)
         require("catppuccin").setup(opts)
