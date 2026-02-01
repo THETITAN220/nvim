@@ -15,6 +15,7 @@ vim.keymap.set("n", "<leader>wh", "<C-w>h", { desc = "Move to left window" })
 vim.keymap.set("n", "<leader>wj", "<C-w>j", { desc = "Move to lower window" })
 vim.keymap.set("n", "<leader>wk", "<C-w>k", { desc = "Move to upper window" })
 vim.keymap.set("n", "<leader>wl", "<C-w>l", { desc = "Move to right window" })
+vim.keymap.set("n", "<leader>ww", "<C-w>w", { desc = "Move to alt window" })
 vim.keymap.set('n', '<leader>bd', ':bp|bd #<CR>', { desc = 'Close Buffer, Keep Window' })
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
