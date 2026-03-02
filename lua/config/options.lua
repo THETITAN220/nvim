@@ -25,6 +25,10 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 opt.clipboard = "unnamedplus"
 
+vim.opt.wrap = true        -- Enable line wrap
+vim.opt.linebreak = true   -- Wrap lines at convenient points
+vim.opt.breakindent = true -- Maintain indent on wrapped lines
+
 vim.opt.numberwidth = 5
 vim.opt.foldcolumn = "1"
 vim.opt.signcolumn = "yes"
