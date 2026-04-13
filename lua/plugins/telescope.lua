@@ -25,6 +25,9 @@ return {
                     show_line = false,
                     include_declaration = false, -- Optional: cleaner list
                 },
+                find_files = {
+                    hidden = true,
+                }
             },
         })
 
